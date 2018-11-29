@@ -51,10 +51,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final ImageView mContentView;
-        public String mItem;
+        final ImageView mContentView;
+        String mItem;
 
-        public ViewHolder(View view) {
+        ViewHolder(View view) {
             super(view);
             mContentView = (ImageView) view;
         }

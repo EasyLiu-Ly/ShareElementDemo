@@ -9,7 +9,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.support.v4.app.SharedElementCallback;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -23,8 +22,8 @@ import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.easyliu.test.shareelementdemo.BaseActivity;
 import com.easyliu.test.shareelementdemo.CallbackPagerSnapHelper;
-import com.easyliu.test.shareelementdemo.R;
 import com.easyliu.test.shareelementdemo.DataGenerator;
+import com.easyliu.test.shareelementdemo.R;
 import com.easyliu.test.shareelementdemo.utils.Constant;
 import com.easyliu.test.shareelementdemo.utils.Utils;
 
@@ -165,10 +164,6 @@ public class SecondActivity extends BaseActivity {
         }
     }
 
-
-    /**
-     * 开始转场
-     */
     private void startActivityTransition() {
         if (!mHasShowTransition) {
             mHasShowTransition = true;
