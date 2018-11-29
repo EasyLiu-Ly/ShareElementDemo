@@ -24,9 +24,6 @@ import com.bumptech.glide.request.target.Target;
 
 /**
  * @author easyliu
- * Created by easyliu on 2018/11/28 20:19.
- * easyliu@tencent.com
- * Copyright (c) 2018 Tencent. All rights reserved.
  */
 public class Utils {
 
