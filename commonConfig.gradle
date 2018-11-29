@@ -1,0 +1,28 @@
+def getJavaVersion() {
+    switch (project.ext.javaVersion) {
+        case "6":
+            return JavaVersion.VERSION_1_6
+        case "7":
+            return JavaVersion.VERSION_1_7
+        case "8":
+            return JavaVersion.VERSION_1_8
+        default:
+            return JavaVersion.VERSION_1_7
+    }
+}
+
+project.ext {
+    minSdkVersion = 19
+    targetSdkVersion = 26
+    compileSdkVersion = targetSdkVersion
+    buildToolsVersion = '26.0.2'
+    javaVersion = 8
+    javaMaxHeapSize = '4096M'
+    multiDexEnabled = true
+    minifyEnabled = true
+    shrinkResources = false
+    sourceCompatibility = this.getJavaVersion()
+    targetCompatibility = this.getJavaVersion()
+    applicationId = "com.easyliu.test.shareelementdemo"
+    supportLibVer = "27.1.1"
+}
